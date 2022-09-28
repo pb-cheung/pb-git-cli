@@ -1,0 +1,34 @@
+{
+  "devDependencies": {
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "git-cz": "^4.9.0",
+    "release-it": "^15.4.2"
+  },
+  "name": "pb-git-cli",
+  "description": "pb's git tool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "release": "release-it",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pb-cheung/pb-git-cli.git"
+  },
+  "keywords": [
+    "git"
+  ],
+  "author": "pb-cheung",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pb-cheung/pb-git-cli/issues"
+  },
+  "homepage": "https://github.com/pb-cheung/pb-git-cli#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
