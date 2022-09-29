@@ -9,6 +9,7 @@
   "description": "pb's git tool",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "release": "release-it",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -30,5 +31,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "shelljs": "^0.8.5",
+    "yargs": "^17.5.1"
   }
 }
