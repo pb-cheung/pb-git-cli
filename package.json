@@ -7,7 +7,7 @@
   },
   "name": "pb-git-cli",
   "description": "pb's git tool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "type": "module",
   "scripts": {
