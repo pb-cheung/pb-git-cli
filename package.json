@@ -4,6 +4,7 @@
     "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
     "git-cz": "^4.9.0",
+    "pb-git-cli": "^1.0.2-0",
     "release-it": "^15.4.2"
   },
   "name": "pb-git-cli",
@@ -18,6 +19,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pb-cheung/pb-git-cli.git"
+  },
+  "bin": {
+    "pGit": "bin/pGit.js"
   },
   "keywords": [
     "git"
