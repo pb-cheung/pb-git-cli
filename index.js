@@ -8,9 +8,6 @@ const {
 } = shell;
 
 export default function (command){
-    // shell.echo('hello world!');
-    console.log(command);
-
     if (!which("git")) {
         echo("此操作需要安装Git");
         exit(1);
@@ -18,13 +15,10 @@ export default function (command){
 
     if(command[0] === 'branch') {
         createStash()
-            .then(
-                pull
-            )
-            .then(() => switchBranch(command[1]))
-            .then(
-                applyStash
-            )
+            .then(() => {
+                console.log('after stash');
+                return switchBranch(command[1]);
+            })
             .catch(res => {
                 console.log(res);
             })
@@ -49,7 +43,7 @@ async function pull() {
 
 async function createStash() {
     if (exec("git stash").code === 0) {
-        await sleep(1000);
+        await sleep(2000);
         return true;
     } else {
         echo("Error: git stash failed");
