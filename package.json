@@ -9,7 +9,7 @@
   },
   "name": "pb-git-cli",
   "description": "pb's git tool",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
